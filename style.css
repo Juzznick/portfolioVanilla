@@ -5,7 +5,6 @@
 
 body{
     background-color: rgb(22, 22, 22);
-    animation: FadeIn 1s ease;
 }
 
 .heading{
@@ -48,6 +47,8 @@ a{
     align-items: center;
     justify-content: center;
     height: 90vh;
+    animation: FadeIn 1s ease;
+
 }
 .hmain-div h1{
     margin: 0;
@@ -72,11 +73,13 @@ h3{
     padding: 0 1rem .3rem 1rem;
     cursor: pointer;
 }
-
+.amain-div{
+    animation: FadeIn 1s ease;
+}
 .amain-div h1{
     margin: 5rem 0 0 0;
 }
-.amain-div p{
+p{
     color: aliceblue;
     font-family: 'Inter';
     padding: 0 5rem;
@@ -88,5 +91,18 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    animation: FadeIn 1s ease;
+
+}
+
+.reveal{
+    position:relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
