@@ -63,19 +63,19 @@ h3{
     justify-content: center;
     position: absolute;
     margin: 0 0 5.5rem 2rem;
-    animation: Flicker 3s ease;
+    animation: Flicker 3s ;
     animation-iteration-count: infinite;
 }
 
 @keyframes Flicker{
     0%{
-        color: rgb(255, 255, 255);    
+        color: rgb(223, 131, 57);
     }
     50%{
         color: transparent;
     }
     100%{
-        color: rgb(255, 255, 255);   
+        color: rgb(223, 131, 57);
     }
 }
 
