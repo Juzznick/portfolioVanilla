@@ -63,6 +63,20 @@ h3{
     justify-content: center;
     position: absolute;
     margin: 0 0 5.5rem 2rem;
+    animation: Flicker 3s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Flicker{
+    0%{
+        color: rgb(255, 255, 255);    
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: rgb(255, 255, 255);   
+    }
 }
 
 #explore{
@@ -74,7 +88,12 @@ h3{
     cursor: pointer;
 }
 .amain-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     animation: FadeIn 1s ease;
+    height: 100%;
+    scroll-margin-top: 5rem;
 }
 .amain-div h1{
     margin: 5rem 0 0 0;
@@ -105,11 +124,22 @@ p{
     background-color: transparent;
     border: none;
 }
+.scroll-button-section{
+    border-radius: 60%;
+    background-color: transparent;
+}
+.scroll-button-section img{
+    transform: rotate(180deg);
+}
 
+.pmain-div h1{
+    margin-bottom: 2rem;
+}
 .pmain-div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-margin: -15rem;
 }
 .psub-div{
     width: 80%;
