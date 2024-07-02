@@ -70,7 +70,7 @@ h3{
     font-family: 'Inter';
     background-color: aliceblue;
     border-radius: 4rem;
-    padding: 0 1rem .3rem 1rem;
+    padding: 0 1.2rem .3rem 1.2rem;
     cursor: pointer;
 }
 .amain-div{
@@ -80,6 +80,8 @@ h3{
     margin: 5rem 0 0 0;
 }
 p{
+    display: flex;
+    justify-content: center;
     color: aliceblue;
     font-family: 'Inter';
     padding: 0 5rem;
@@ -96,13 +98,10 @@ p{
 
 }
 
-.reveal{
-    position:relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 2s ease;
-}
-.reveal.active{
-    transform: translateY(0px);
-    opacity: 1;
+#scroll-button{
+    position: fixed;
+    bottom:1.5rem;
+    right:1.5rem;
+    background-color: transparent;
+    border: none;
 }
