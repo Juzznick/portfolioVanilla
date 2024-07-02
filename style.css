@@ -28,10 +28,10 @@ ul{
 a{
     text-decoration: none;
 }
-
-
-
-
+.hero{
+    display: flex;
+    justify-content: center;
+}
 @keyframes FadeIn{
     0%{ opacity: 0;
         filter: blur(3px);    
@@ -40,7 +40,6 @@ a{
         filter: blur(0px);
     }
 }
-
 .hmain-div{
     display: flex;
     flex-direction: column;
@@ -53,7 +52,6 @@ a{
 .hmain-div h1{
     margin: 0;
 }
-
 h3{
     font-size: 1.5rem;
     margin: 0;
@@ -66,7 +64,6 @@ h3{
     animation: Flicker 3s ;
     animation-iteration-count: infinite;
 }
-
 @keyframes Flicker{
     0%{
         color: rgb(223, 131, 57);
@@ -78,7 +75,6 @@ h3{
         color: rgb(223, 131, 57);
     }
 }
-
 #explore{
     font-size: 1.4rem;
     font-family: 'Inter';
