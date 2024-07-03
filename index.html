@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="res/logo.png" type="image/icon type">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,32 +11,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
     <title>
-        Nikhil
+        Hey I'm Nikhil
     </title>
 
 </head>
 
 <body>
-    <!--<nav>
-        <ul>
-            <a href="index.html"><li>HOME</li></a>
-            <a href="aboutme.html"><li>ABOUT ME</li></a>
-            <a href="contact.html"><li>CONTACT</li></a>
-        </ul>
-    </nav>-->
-    <div class="hero">
-        <div class="hmain-div" id="hmain-div">
-            <img src="res/hero.png"/>
+    
+    <div class="hero-main" id="hero-main">
+        <nav id="'navBar" class="navBar">
+            <ul>
+                <a href="#hero-main"><li>HOME</li></a>
+                <a href="#amain-div"><li>ABOUT ME</li></a>
+                <a href="#pmain-div"><li>PROJECTS</li></a>
+                <a href="#cmain-div"><li>CONTACT</li></a>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <div class="hmain-div hmain-div-img" id="hmain-div">
+                <img src="res/hero.png"/>
+            </div>
+            <div class="hmain-div" id="hmain-div">
+                <h3>Hi I'm</h3>
+                <h1 class="heading">
+                    Nikhil
+                </h1>
+                <button onclick="window.location='#amain-div'" id="explore">Lets Go</button>
+            </div>
         </div>
-        <div class="hmain-div" id="hmain-div">
-            <h3>Hi I'm</h3>
-            <h1 class="heading">
-                Nikhil
-            </h1>
-            <button onclick="window.location='#amain-div'" id="explore">Lets Go</button>
-        </div>
-        
     </div>
+    
 
 
     <div class="amain-div" id="amain-div">
@@ -53,19 +59,19 @@
             Projects
         </h1>
         <div class="psub-div">
-            <img src="res/vasthub.png" />
+            <a href="https://vasthub.netlify.app"><img src="res/vasthub.png" /></a>
         </div>
         <br /><br /><br /><br /><br /><br />
         <div class="psub-div">
-            <img src="res/powerf.png" />
+            <a href="https://powerfitnesss.netlify.app"><img src="res/powerf.png" /></a>
         </div>
         <br /><br /><br /><br /><br /><br />
         <div class="psub-div">
-            <img src="res/casev.png" />
+            <a href="https://caseverze.netlify.app"><img src="res/casev.png" /></a>
         </div>
     </div>
 
-    <div class="cmain-div">
+    <div class="cmain-div" id="cmain-div">
         <h1 class="heading">
             Contact Me
         </h1>

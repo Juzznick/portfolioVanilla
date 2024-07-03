@@ -1,10 +1,14 @@
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    margin: 0;
 }
 
 body{
     background-color: rgb(22, 22, 22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .heading{
@@ -14,20 +18,40 @@ body{
     font-size: 20rem;
     font-family: 'Darker Grotesque';
 }
-li{
+
+.hero-main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar{
+    position: sticky;
+    top:1rem;
+    background-color: rgba(223, 132, 57, 0.705);
+    width: 50%;
+    padding: .6rem;
+    border-radius: 3rem;
+}
+.navBar li{
     color: aliceblue;
     list-style-type: none;
     font-family: 'Darker Grotesque';
     font-size: 1.5rem;
     cursor: pointer;
 }
-ul{
+.navBar ul{
     display: flex;
     justify-content: space-around;
 }
-a{
+.navBar a{
     text-decoration: none;
 }
+
+
 .hero{
     display: flex;
     justify-content: center;
@@ -45,9 +69,11 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
     animation: FadeIn 1s ease;
-
+    scroll-margin-top: 10rem;
+}
+.hmain-div-img{
+    width: 20%;
 }
 .hmain-div h1{
     margin: 0;
@@ -88,7 +114,7 @@ h3{
     flex-direction: column;
     align-items: center;
     animation: FadeIn 1s ease;
-    height: 100%;
+    height: 100vh;
     scroll-margin-top: 5rem;
 }
 .amain-div h1{
@@ -110,6 +136,7 @@ p{
     align-items: center;
     justify-content: center; 
     animation: FadeIn 1s ease;
+    height: 100vh;
 
 }
 
@@ -123,10 +150,13 @@ p{
 .scroll-button-section{
     border-radius: 60%;
     background-color: transparent;
+    margin-top: 2rem;
 }
 .scroll-button-section img{
     transform: rotate(180deg);
 }
+
+
 
 .pmain-div h1{
     margin-bottom: 2rem;
