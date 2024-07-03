@@ -17,31 +17,35 @@
 </head>
 
 <body>
-    
-    <div class="hero-main" id="hero-main">
-        <nav id="'navBar" class="navBar">
-            <ul>
-                <a href="#hero-main"><li>HOME</li></a>
-                <a href="#amain-div"><li>ABOUT ME</li></a>
-                <a href="#pmain-div"><li>PROJECTS</li></a>
-                <a href="#cmain-div"><li>CONTACT</li></a>
-            </ul>
-        </nav>
-
-        <div class="hero">
-            <div class="hmain-div hmain-div-img" id="hmain-div">
-                <img src="res/hero.png"/>
-            </div>
-            <div class="hmain-div" id="hmain-div">
-                <h3>Hi I'm</h3>
-                <h1 class="heading">
-                    Nikhil
-                </h1>
-                <button onclick="window.location='#amain-div'" id="explore">Lets Go</button>
-            </div>
+    <nav id="'navBar" class="navBar">
+        <ul>
+            <a href="#hmain-div">
+                <li>HOME</li>
+            </a>
+            <a href="#amain-div">
+                <li>ABOUT ME</li>
+            </a>
+            <a href="#pmain-div">
+                <li>PROJECTS</li>
+            </a>
+            <a href="#cmain-div">
+                <li>CONTACT</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="hmain-div hmain-div-img" id="hmain-div">
+            <img src="res/hero.png" />
+        </div>
+        <div class="hmain-div">
+            <h3>Hi I'm</h3>
+            <h1 class="heading">
+                Nikhi<span>l</span>
+            </h1>
+            <button onclick="window.location='#amain-div'" id="explore">Lets Go</button>
         </div>
     </div>
-    
+
 
 
     <div class="amain-div" id="amain-div">
@@ -49,6 +53,12 @@
             About Me
         </h1>
         <p>An Enthusiastic CS student with a knack for web Dev.</p>
+        <p>Hi there, I'm Nikhil, a passionate Computer Science Engineering student who loves Web Development.
+            I thrive on creating captivating user experiences and turning ideas into reality using technologies like<span class="span-react"> React </span>
+            and <span class="span-tail"> Tailwind CSS </span>. Constantly learning and adapting to new challenges, I'm eager to contribute to innovative
+            projects
+            and collaborate with like-minded professionals in the tech world. Let's connect and explore the exciting
+            possibilities together!</p>
         <button onclick="window.location='#pmain-div'" class="scroll-button-section"><img
                 src="res/up-arrow.png" /></button>
 
@@ -73,9 +83,15 @@
 
     <div class="cmain-div" id="cmain-div">
         <h1 class="heading">
-            Contact Me
+            Contact
         </h1>
-        <p>Nikhil - xnick126@gmail.com</p>
+        <p>Nikhil</p>
+        <div class="cmain-sub">
+            <a href="https://instagram.com/juzznick"><img src="res/insta.png" /></a>
+            <a href="https://github.com/juzznick"><img src="res/github.png" /></a>
+            <a href="https://linkedin.com/in/juzznick"><img src="res/linked.png" /></a>
+        </div>
+
     </div>
 
     <button onclick="window.location='#hmain-div'" id="scroll-button"><img src="res/up-arrow.png" /></button>
