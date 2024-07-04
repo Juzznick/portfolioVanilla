@@ -9,8 +9,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* animation: Border 2s; */
-    /* border: solid 1rem white; */
+    animation: Border 1s ease;
+    border: solid 1rem white;
     
 }
 @keyframes Border{
@@ -274,14 +274,18 @@ p{
 }
 .card{
     height: 35rem;
+    position: relative;
     background-color: aliceblue;
     width: 25rem;
     border-radius: 2rem;
     cursor: pointer;
+    background-image: url("res/casev.png");
+    overflow: hidden;
 }
 .card:hover{
     filter: blur(.2rem);
     transition: 1s ease-in;
+    transform: translateY(-1rem);
 }
 .card img{
     height: 100%;
@@ -291,4 +295,50 @@ p{
 }
 .card h1{
     font-family: 'Darker Grotesque';
+}
+.card p{
+    display: flex;
+    justify-content: center;
+}
+.card-subdiv{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+@media (max-width: 1000px){
+
+    .hmain-div{
+        height: 80vh;
+        justify-content: center;
+    }
+    .card-div{
+        display: none;
+    }
+    .amain-div .heading{
+        font-size: 11rem;
+    }
+    .amain-div{
+        width: 100%;
+        height: 100vh;
+    }
+    .about-sub-l{
+        width: 100%;
+    }
+
+
+    .pmain-div .heading{
+    font-size: 16rem;
+    }
+
+
+    .cmain-div .heading{
+        font-size: 17rem;
+    }
+    .cmain-div form{
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
