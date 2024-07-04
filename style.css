@@ -9,15 +9,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: Border 1s ease;
-    border: solid 1rem white;   
+    /* animation: Border 2s ease;
+    border: solid 2rem white;    */
 }
 @keyframes Border{
     0%{
         border: none;
     }
     100%{
-        border: solid 1rem white;
+        border: solid 2rem white;
     }
 }
 
@@ -34,7 +34,6 @@ body{
     z-index: 2;
     top:1rem;
     background-color: rgb(223, 132, 57);
-    /* border: solid .1rem rgb(223, 131, 57); */
     backdrop-filter: blur(4px);
     width: 50%;
     padding: .6rem;
@@ -91,7 +90,7 @@ h3{
     font-size: 1.5rem;
     margin: 0;
     display: flex;
-    color: rgb(223, 131, 57);
+    color: rgb(223, 132, 57);
     font-family: 'Darker Grotesque';
     justify-content: center;
     position: absolute;
@@ -101,13 +100,13 @@ h3{
 }
 @keyframes Flicker{
     0%{
-        color: rgb(223, 131, 57);
+        color: rgb(223, 132, 57);
     }
     50%{
         color: transparent;
     }
     100%{
-        color: rgb(223, 131, 57);
+        color: rgb(223, 132, 57);
     }
 }
 #explore{
