@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="res/logo.png" type="image/icon type">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,23 +48,26 @@
                 <button onclick="window.location='#amain-div'" id="explore">Lets Go</button>
             </div>
         </div>
-    
-    
-    
-    
-    
+
+
+
+
+
         <div class="amain-div reveal" id="amain-div">
             <h1 class="heading">
                 About Me
             </h1>
             <div class="about-div">
-    
+
                 <div class="about-sub about-sub-l">
-                    <p>An Enthusiastic CS student with a knack for web Dev.</p><br/>
-                    <p>Hi there, I'm Nikhil, a passionate Computer Science Engineering student who loves Web Development.
-                        I thrive on creating captivating user experiences and turning ideas into reality using technologies
+                    <p>An Enthusiastic CS student with a knack for web Dev.</p><br />
+                    <p>Hi there, I'm Nikhil, a passionate Computer Science Engineering student who loves Web
+                        Development.
+                        I thrive on creating captivating user experiences and turning ideas into reality using
+                        technologies
                         like<span class="span-react"> React </span>
-                        and <span class="span-tail"> Tailwind CSS </span>.<br/><br/> Constantly learning and adapting to new
+                        and <span class="span-tail"> Tailwind CSS </span>.<br /><br /> Constantly learning and adapting
+                        to new
                         challenges,
                         I'm eager to contribute to innovative
                         projects
@@ -72,19 +76,19 @@
                         possibilities together!</p>
                 </div>
                 <div class="about-sub about-sub-r">
-                    <img src="res/me.png"/>
+                    <img src="res/me.png" />
                 </div>
-    
+
             </div>
             <button onclick="window.location='#pmain-div'" class="scroll-button-section"><img
-                src="res/up-arrow.png" /></button>
-    
-    
+                    src="res/up-arrow.png" /></button>
+
+
         </div>
-    
-    
-    
-    
+
+
+
+
         <div class="pmain-div reveal" id="pmain-div">
             <h1 class="heading">
                 Projects
@@ -92,7 +96,7 @@
             <div class="card-div">
                 <a href="https://vasthub.netlify.app">
                     <div class="card">
-                        <img src="res/vasthub.png"/>
+                        <img src="res/vasthub.png" />
                         <div class="card-subdiv">
                             <p>VastHub</p>
                         </div>
@@ -100,7 +104,7 @@
                 </a>
                 <a href="https://caseverze.netlify.app">
                     <div class="card">
-                        <img src="res/casev.png"/>
+                        <img src="res/casev.png" />
                         <div class="card-subdiv">
                             <p>CaseVerze</p>
                         </div>
@@ -114,29 +118,29 @@
                         </div>>
                     </div>
                 </a>
-                
+
             </div>
-    
+
         </div>
-    
+
         <div class="cmain-div reveal" id="cmain-div">
             <h1 class="heading">
                 Contact
             </h1>
-            <a href='res/cv.pdf' ><button class="cv-button">getCV</button></a>
+            <a href='res/cv.pdf'><button class="cv-button">getCV</button></a>
             <p>Nikhil Mukundan</p>
             <div class="cmain-sub">
                 <a href="https://instagram.com/juzznick"><img src="res/insta.png" /></a>
                 <a href="https://github.com/juzznick"><img src="res/github.png" /></a>
                 <a href="https://linkedin.com/in/juzznick"><img src="res/linked.png" /></a>
             </div>
-            <form>
-                <input placeholder="Name">
-                <input placeholder="Email">
-                <input placeholder="Description">
-    
+            <form id="contact-form">
+                <input id="name" type='text' placeholder="Name">
+                <input id='email' type='email' placeholder="Email">
+                <textarea id='message' placeholder="Description"></textarea>
+                <button type='submit' onclick="sendMail()" class="send-button">Send</button>
             </form>
-            <a><button class="send-button">Send</button></a>
+        
     
         </div>
     
