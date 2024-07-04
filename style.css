@@ -10,8 +10,7 @@ body{
     flex-direction: column;
     align-items: center;
     animation: Border 1s ease;
-    border: solid 1rem white;
-    
+    border: solid 1rem white;   
 }
 @keyframes Border{
     0%{
