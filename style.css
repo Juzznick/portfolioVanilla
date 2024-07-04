@@ -9,6 +9,17 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* animation: Border 2s; */
+    /* border: solid 1rem white; */
+    
+}
+@keyframes Border{
+    0%{
+        border: none;
+    }
+    100%{
+        border: solid 1rem white;
+    }
 }
 
 .heading{
@@ -197,6 +208,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
 }
 .psub-div{
     width: 60%;
@@ -248,4 +260,30 @@ p{
 .reveal.active{
     transform: translateY(0px);
     opacity: 1;
+}
+.card-div{
+    margin-top: 0rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.card{
+    height: 35rem;
+    background-color: aliceblue;
+    width: 25rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.card:hover{
+    filter: blur(.2rem);
+    transition: 1s ease-in;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.9rem;
+}
+.card h1{
+    font-family: 'Darker Grotesque';
 }
