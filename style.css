@@ -239,7 +239,7 @@ p{
     }       
 }
 
-.cv-button{
+.send-button{
     padding: .2rem 1rem .2rem 1rem;
     margin-top: 1rem;
     background-color: transparent;
@@ -247,10 +247,15 @@ p{
     font-size: 1.5rem;
     color: aliceblue;
     border: solid orange .16rem;
-
-    
 }
-
+.cv-button{
+    padding: .5rem 1rem .5rem 1rem;
+    font-family: 'Inter';
+    border-radius: 1rem;
+    background-color:  orange;
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
 
 .reveal{
     transform: translateY(2rem);
