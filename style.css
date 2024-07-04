@@ -307,7 +307,11 @@ p{
 }
 
 @media (max-width: 1000px){
-
+    body{
+        width: 100vw;   
+        /* animation: none;
+        border: none; */
+    }
     .hmain-div{
         height: 80vh;
         justify-content: center;
@@ -338,6 +342,12 @@ p{
     .cmain-div form{
         display: flex;
         flex-direction: column;
+    }
+
+    #scroll-button{
+        left:0;
+        right:0;
+        width: 100vw;
     }
 
 
