@@ -6,11 +6,13 @@
 
 body{
     background-color: rgb(22, 22, 22);
+    /* animation: Border 2s ease;
+    border: solid 2rem white;    */
+}
+.mainDiv{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* animation: Border 2s ease;
-    border: solid 2rem white;    */
 }
 @keyframes Border{
     0%{
@@ -348,5 +350,21 @@ p{
         width: 100vw;
     }
 
+
+    .amain-div .heading{
+        margin-bottom: 8rem;
+    }
+
+
+    .cmain-div p{
+        font-size: 3rem;
+    }
+    .cmain-div button{
+        font-size: 2rem;
+    }
+    .cmain-div input{
+        font-size: 1rem;
+        
+    }
 
 }
