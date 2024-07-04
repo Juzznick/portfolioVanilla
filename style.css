@@ -23,7 +23,9 @@ body{
     position: sticky;
     z-index: 2;
     top:1rem;
-    background-color: rgb(184, 101, 33);
+    background-color: rgb(223, 132, 57);
+    /* border: solid .1rem rgb(223, 131, 57); */
+    backdrop-filter: blur(4px);
     width: 50%;
     padding: .6rem;
     border-radius: 3rem;
@@ -36,6 +38,7 @@ body{
     font-family: 'Darker Grotesque';
     font-size: 1.5rem;
     cursor: pointer;
+    font-weight: 500;
 }
 .navBar ul{
     display: flex;
@@ -120,12 +123,13 @@ h3{
     
 }
 .amain-div{
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     animation: FadeIn 1s ease;
-    height: 110vh;
-    scroll-margin-top: -5rem;
+    height: 100vh;
+    scroll-margin-top: -2rem;
 }
 .amain-div h1{
     margin: 5rem 0 0 0;
@@ -193,10 +197,9 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    scroll-margin: 3rem;
 }
 .psub-div{
-    width: 80%;
+    width: 60%;
     padding: 1rem;
     border: solid rgba(255, 255, 255, 0.281);
 }
@@ -222,4 +225,27 @@ p{
     100%{
         transform: scaleY(100%);
     }       
+}
+
+.cv-button{
+    padding: .2rem 1rem .2rem 1rem;
+    margin-top: 1rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: aliceblue;
+    border: solid orange .16rem;
+
+    
+}
+
+
+.reveal{
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: all 3s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
