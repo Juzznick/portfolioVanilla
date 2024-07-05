@@ -301,8 +301,11 @@ p{
     left: 1.5rem;
     font-family: 'Inter';
     border-radius: 1rem;
-    background-color:  orange;
     font-size: 1rem;
+    background-color: transparent;
+    filter: invert();
+    border: none;
+    cursor:pointer;
 }
 
 .reveal{
