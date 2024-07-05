@@ -182,12 +182,25 @@ h3{
     backdrop-filter: blur(3px);
     height: 10rem;
     border-radius: 6rem;
+    animation: bubbleRotate ease-in-out infinite 5s;
 }
 .bubblebg{
     z-index: 1;
     position: relative;
     top: 0;
     height: 5rem;
+}
+@keyframes bubbleRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
 }
 
 
