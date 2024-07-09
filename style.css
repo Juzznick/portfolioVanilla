@@ -307,7 +307,6 @@ p{
     border: none;
     cursor:pointer;
 }
-
 .reveal{
     transform: translateY(2rem);
     opacity: 0;
