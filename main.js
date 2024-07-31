@@ -15,10 +15,8 @@ function reveal() {
 }
 
 (function () {
-    emailjs.init({publicKey:'DgcDeUInrHpbiN5RV',});
+    emailjs.init(process.env.EmailjsPublicKey);
 })();
-
-console.log(process.env.EmailjsPublicKey);
 
 function sendMail() {
     var params = {
