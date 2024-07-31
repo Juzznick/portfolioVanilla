@@ -14,8 +14,13 @@ function reveal() {
     }
 }
 
+
+require('dotenv').config();
+
+const publicKey = process.env.EmailjsPublicKey;
+
 (function () {
-    emailjs.init(process.env.EmailjsPublicKey);
+    emailjs.init(publicKey);
 })();
 
 function sendMail() {
