@@ -1,3 +1,4 @@
+import { apiKey } from './apiKeyPriv.js';
 window.addEventListener('scroll', reveal);
 function reveal() {
     var reveals = document.querySelectorAll('.reveal');
@@ -16,9 +17,10 @@ function reveal() {
 
 (function () {
     emailjs.init({
-        publicKey: "DgcDeUInrHpbiN5RV",
+        publicKey: apiKey,
     });
 })();
+console.log(apiKey);
 
 function sendMail() {
     var params = {
