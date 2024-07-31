@@ -20,7 +20,6 @@ function reveal() {
         publicKey: apiKey,
     });
 })();
-console.log(apiKey);
 
 function sendMail() {
     var params = {
