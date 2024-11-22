@@ -382,6 +382,9 @@ p{
 
 
 @media (max-width: 1000px){
+    .hero{
+        width: 100%;
+    }
     body{
         width: 100vw;   
         /* animation: none;
@@ -405,15 +408,6 @@ p{
         width: 100%;
     }
 
-
-    .pmain-div .heading{
-    font-size: 16rem;
-    }
-
-
-    .cmain-div .heading{
-        font-size: 17rem;
-    }
     .cmain-div form{
         display: flex;
         flex-direction: column;
@@ -446,5 +440,9 @@ p{
     }
     .about-sub{
         width: 33%;
+    }
+
+    .heading{
+        font-size: 2rem;
     }
 }
