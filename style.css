@@ -399,31 +399,19 @@ p{
     .about .heading{
         font-size: 11rem;
     }
-    .about{
-        width: 100%;
-        height: 100vh;
-    }
-    .about-sub-l{
-        width: 100%;
-    }
 
     .contact form{
         display: flex;
         flex-direction: column;
     }
 
-    #scroll-button{
-        left:0;
-        right:0;
-        width: 100vw;
-    }
-
-
     .about .heading{
         margin-bottom: 8rem;
     }
 
-
+    #contact{
+        width: 100%;
+    }
     .contact p{
         font-size: 3rem;
     }
@@ -434,13 +422,36 @@ p{
         font-size: 1rem;
         
     }
+
+
+
+    .about{
+        width: 100%;
+        height: 100vh;
+    }
+    .about-div{
+        display: block;
+    }
     .bubble-div{
         display: none;
     }
     .about-sub{
-        width: 33%;
+        width: 50%;
     }
-
+    .about-sub-l{
+        width: 100%;
+        margin: 0 2rem;
+    }
+    .about-sub-r{
+        width: 100%;
+        display: flex;
+    }
+    .about-sub-r img{
+        object-fit: contain;
+    }
+    .about p{
+        padding: 0;
+    }
     .heading{
         font-size: 2rem;
     }
