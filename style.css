@@ -259,6 +259,7 @@ p{
     width: 60%;
     padding: 1rem;
     border: solid rgba(255, 255, 255, 0.281);
+    overflow: hidden;
 }
 .psub-div img{
     width: 100%;
@@ -322,10 +323,10 @@ p{
     width: 100%;
 }
 .card{
-    height: 35rem;
+    height: 20rem;
     position: relative;
     background-color: aliceblue;
-    width: 25rem;
+    width: 20rem;
     border-radius: 2rem;
     cursor: pointer;
     background-image: url("res/casev.png");
@@ -430,7 +431,9 @@ p{
         height: 100vh;
     }
     .about-div{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .bubble-div{
         display: none;
@@ -440,19 +443,22 @@ p{
     }
     .about-sub-l{
         width: 100%;
-        margin: 0 2rem;
+        margin: 0;
     }
     .about-sub-r{
-        width: 100%;
+        margin-top: 2rem;
+        width: 65%;
         display: flex;
     }
     .about-sub-r img{
-        object-fit: contain;
-    }
-    .about p{
-        padding: 0;
+        object-fit: cover;
+        border-radius: 1rem;
     }
     .heading{
         font-size: 2rem;
+    }
+
+    #projects{
+        display: none;
     }
 }
