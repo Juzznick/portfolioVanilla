@@ -352,8 +352,10 @@ p{
 }
 .card-subdiv{
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    background-color: black;
 }
 
 #contact-form{
@@ -393,9 +395,6 @@ p{
     .home{
         height: 80vh;
         justify-content: center;
-    }
-    .card-div{
-        display: none;
     }
     .about .heading{
         font-size: 11rem;
@@ -458,7 +457,11 @@ p{
         font-size: 2rem;
     }
 
-    #projects{
-        display: none;
+    #projects .heading{
+        font-size: 5rem;
     }
+    .card-div{
+        flex-wrap: wrap;
+    }
+
 }
