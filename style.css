@@ -293,6 +293,7 @@ p{
     font-size: 1.5rem;
     color: aliceblue;
     border: solid orange .16rem;
+    cursor: pointer;
 }
 .cv-button{
     padding: .5rem 1rem .5rem 1rem;
