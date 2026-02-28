@@ -17,7 +17,6 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Nikhil Mukundan Portfolio">
 
-
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -36,8 +35,6 @@
           }
         }
     </script>
-        
-
 
     <link rel="canonical" href="https://juzznick.netlify.app" />
     <link rel="stylesheet" href="style.css">
@@ -47,15 +44,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
-    <title>
-        Hey I'm Nikhil | Frontend Web Developer
-    </title>
-
-</head>  
+    <title>Hey I'm Nikhil | Frontend Web Developer</title>
+</head>
 
 <body>
+
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <nav class="sidebar" id="sidebar" aria-label="Mobile navigation">
+        <div class="sidebar-brand">Nikhil ✦</div>
+        <a href="#home" onclick="closeSidebar()">Home</a>
+        <a href="#about" onclick="closeSidebar()">About Me</a>
+        <a href="#projects" onclick="closeSidebar()">Projects</a>
+        <a href="#contact" onclick="closeSidebar()">Contact</a>
+    </nav>
+
     <div class="mainDiv">
+
         <nav id="navBar" class="navBar" aria-label="Main navigation">
             <ul>
                 <li><a href="#home" title="Go to Home Section">Home</a></li>
@@ -64,128 +75,97 @@
                 <li><a href="#contact" title="Get in Touch">Contact</a></li>
             </ul>
         </nav>
-        
+
         <div class="hero">
             <div class="home home-img" id="home">
-                <img src="res/hero.png" alt="Profile Hero Banner"/>
+                <img src="res/hero.png" alt="Profile Hero Banner" />
             </div>
             <div class="home">
                 <h3>Hi I'm</h3>
-                <h1 class="heading">
-                    Nikhi<span>l</span>
-                </h1>
+                <h1 class="heading">Nikhi<span>l</span></h1>
                 <button onclick="window.location='#about'" id="explore">Lets Go</button>
             </div>
         </div>
 
-
-
-
-
         <div class="about reveal" id="about">
-            <h1 class="heading">
-                About Me
-            </h1>
+            <h1 class="heading">About Me</h1>
             <div class="about-div">
                 <div class="bubble-div">
-                    <img class="bubble" src="res/bubble.svg" alt="bubble"/>
-                    <img class="bubblebg" src="res/bubblebg.svg" alt="bubbleBg"/>
+                    <img class="bubble" src="res/bubble.svg" alt="bubble" />
+                    <img class="bubblebg" src="res/bubblebg.svg" alt="bubbleBg" />
                 </div>
                 <div class="about-sub about-sub-l">
                     <p>An Enthusiastic CS student with a knack for web Dev.</p><br />
-                    <p>I’m Nikhil Mukundan, a Computer Science Engineering student with a strong focus on frontend web development.
-                        I thrive on creating captivating user experiences and turning ideas into reality using
-                        technologies
-                        like<span class="span-react"> React </span>
-                        and <span class="span-tail"> Tailwind CSS </span>.<br /><br /> Constantly learning and adapting
-                        to new
-                        challenges,
-                        I'm eager to contribute to innovative
-                        projectss
-                        and collaborate with like-minded professionals in the tech world. Let's connect and explore the
-                        exciting
-                        possibilities together!</p>
+                    <p>I'm Nikhil Mukundan, a Computer Science Engineering student with a strong focus on frontend web
+                        development. I thrive on creating captivating user experiences and turning ideas into reality
+                        using technologies like <span class="span-react">React</span> and
+                        <span class="span-tail">Tailwind CSS</span>.<br /><br />
+                        Constantly learning and adapting to new challenges, I'm eager to contribute to innovative
+                        projects and collaborate with like-minded professionals in the tech world. Let's connect and
+                        explore the exciting possibilities together!</p>
                 </div>
                 <div class="about-sub about-sub-r">
                     <img src="res/me.png" alt="Image of Nikhil" />
                 </div>
-
             </div>
-            <button onclick="window.location='#projects'" class="scroll-button-section"><img
-                    src="res/up-arrow.png" alt="up-arrow" /></button>
-
-
+            <button onclick="window.location='#projects'" class="scroll-button-section">
+                <img src="res/up-arrow.png" alt="scroll to projects" />
+            </button>
         </div>
 
-
-
-
         <div class="projects reveal" id="projects">
-            <h1 class="heading">
-                Projects
-            </h1>
+            <h1 class="heading">Projects</h1>
             <div class="card-div">
                 <a href="https://vasthub.netlify.app">
                     <article class="card">
                         <img src="res/vasthub.png" alt="vasthub website" />
-                        <div class="card-subdiv">
-                            <p>VastHub</p>
-                        </div>
+                        <div class="card-subdiv"><p>VastHub</p></div>
                     </article>
                 </a>
                 <a href="https://caseverze.netlify.app">
                     <article class="card">
                         <img src="res/casev.png" alt="caseverze website" />
-                        <div class="card-subdiv">
-                            <p>CaseVerze</p>
-                        </div>
+                        <div class="card-subdiv"><p>CaseVerze</p></div>
                     </article>
                 </a>
                 <a href="https://powerfitnesss.netlify.app">
                     <article class="card">
-                        <img src="res/powerf.png" alt="powerfitness website">
-                        <div class="card-subdiv">
-                            <p>PowerFitness</p>
-                        </div>>
+                        <img src="res/powerf.png" alt="powerfitness website" />
+                        <div class="card-subdiv"><p>PowerFitness</p></div>
                     </article>
                 </a>
                 <a href="https://vyvidh.vidyaacademy.ac.in">
                     <article class="card">
-                        <img src="res/vyvidh.png" alt="vyvidh website"/>
-                        <div class="card-subdiv">
-                            <p>Vyvidh</p>
-                        </div>
+                        <img src="res/vyvidh.png" alt="vyvidh website" />
+                        <div class="card-subdiv"><p>Vyvidh</p></div>
                     </article>
                 </a>
-
             </div>
-
         </div>
 
         <div class="contact reveal" id="contact">
-            <h1 class="heading">
-                Contact Me
-            </h1>
+            <h1 class="heading">Contact Me</h1>
             <div class="cmain-sub">
-                <a href="https://instagram.com/juzznick"><img src="res/insta.png" alt="instagram"/></a>
-                <a href="https://github.com/juzznick"><img src="res/github.png" alt="github"/></a>
-                <a href="https://linkedin.com/in/juzznick"><img src="res/linked.png" alt="linkedin"/></a>
+                <a href="https://instagram.com/juzznick"><img src="res/insta.png" alt="instagram" /></a>
+                <a href="https://github.com/juzznick"><img src="res/github.png" alt="github" /></a>
+                <a href="https://linkedin.com/in/juzznick"><img src="res/linked.png" alt="linkedin" /></a>
             </div>
             <form id="contact-form">
-                <input id="name" type='text' placeholder="Name">
-                <input id='email' type='email' placeholder="Email">
-                <textarea id='message' placeholder="Description"></textarea>
-                <button type='submit' onclick="sendMail()" class="send-button">Send</button>
+                <input id="name" type="text" placeholder="Name">
+                <input id="email" type="email" placeholder="Email">
+                <textarea id="message" placeholder="Description"></textarea>
+                <button type="submit" onclick="sendMail()" class="send-button">Send</button>
             </form>
-        
-    
         </div>
-    
-        <button onclick="window.location='#home'" id="scroll-button"><img src="res/up-arrow.png" /></button>
-        <a href='res/cv.pdf'><button class="cv-button"><img src="res/cvlogo.png" /></button></a>
-        
+
+        <button onclick="window.location='#home'" id="scroll-button">
+            <img src="res/up-arrow.png" alt="scroll to top" />
+        </button>
+        <a href="res/cv.pdf"><button class="cv-button"><img src="res/cvlogo.png" alt="download cv" /></button></a>
+
     </div>
-    
+
+    <script src="main.js"></script>
 </body>
 
 </html>
