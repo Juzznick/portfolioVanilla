@@ -62,11 +62,13 @@ body {
     background: rgba(0, 0, 0, 0.6);
     z-index: 998;
     opacity: 0;
+    pointer-events: none;  /* ← add this */
     transition: opacity 0.3s ease;
 }
 
 .sidebar-overlay.open {
     opacity: 1;
+    pointer-events: auto;  /* ← add this */
 }
 
 /* ========== SIDEBAR ========== */
@@ -477,12 +479,14 @@ p {
         flex-direction: column;
         align-items: center;
         padding-top: 4rem;
+        max-height: 100vh;
     }
 
     .home {
         height: auto;
         min-height: 50vh;
         padding: 2rem 1rem;
+        justify-content: center;
     }
 
     .home-img {
@@ -494,6 +498,14 @@ p {
         font-size: 1.2rem;
         position: relative;
         margin: 0 0 0.5rem 0;
+    }
+
+    .home h3{
+        font-size: 3rem;
+    }
+
+    .home h1{
+        font-size: 9rem;
     }
 
     .heading {
